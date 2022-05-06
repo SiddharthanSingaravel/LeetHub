@@ -1,7 +1,3 @@
 class Solution:
     def buildArray(self, nums: List[int]) -> List[int]:
-        out = []
-        for index, i in enumerate(nums):
-            out.append(nums[nums[index]])
-        
-        return out
+        return [nums[nums[i]] for i in range(len(nums))]
