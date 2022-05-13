@@ -1,7 +1,7 @@
 class Solution:
     def sumBase(self, n: int, k: int) -> int:
-        out = []
+        out = 0
         while n > 0:
-            out.append(n%k)
+            out += (n%k)
             n = n//k
-        return sum(out)
+        return out
