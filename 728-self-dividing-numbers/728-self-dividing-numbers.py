@@ -7,11 +7,9 @@ class Solution:
             
             while temp > 0:
                 ind = temp%10
-                if ind == 0:
+                if ind == 0 or i%ind != 0:
                     out += 1
                     break
-                if i%ind != 0:
-                    out += 1
                 temp = temp//10
             
             if out == 0:
