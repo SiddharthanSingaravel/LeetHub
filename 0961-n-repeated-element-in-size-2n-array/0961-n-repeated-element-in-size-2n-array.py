@@ -6,5 +6,4 @@ class Solution:
                 container.append(i)
             else:
                 return i
-                break
         
